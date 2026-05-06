@@ -12,8 +12,6 @@ canvas = tk.Canvas(width=600, height=600, bg='white')
 canvas.pack()
 canvas.create_text(300, 150, text="Pyrotechnik", font=("Arial", 20, "bold"), fill="magenta4")
 canvas.create_text(300, 170, text="Vyber správny káblik", font=("Arial", 12, "bold"), fill="black")
-timer_text = canvas.create_text(300, 400, text=time, font=("Arial", 20, "bold"), fill="magenta4")
-timer_text = canvas.create_text(300, 400, text=time, font=("Arial", 20, "bold"), fill="magenta4")
 hodiny = canvas.create_text(300, 400, text=time, font=("Arial", 20, "bold"), fill="magenta4")
 
 def checker(event):
@@ -24,6 +22,7 @@ def checker(event):
         stop = True
     else:
         canvas.create_text(300, 300, text="Prehral si!", font=("Arial", 20, "bold"), fill="magenta4")
+        stop = True
         
 def timer():
     global time
